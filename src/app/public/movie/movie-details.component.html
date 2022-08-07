@@ -1,1 +1,20 @@
-<p>movie-details works!</p>
+<div class="rounded">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 col-lg-3 col-sm-4 col-xl-2" *ngFor="let genre of genres">
+                <p>{{genre}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="rounded">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 col-lg-3 col-sm-4 col-xl-2" *ngFor="let cast of casts">
+                <p>{{cast}}</p>
+            </div>
+        </div>
+    </div>
+</div>

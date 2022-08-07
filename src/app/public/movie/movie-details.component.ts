@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MovieDetails } from 'src/app/shared/models/MovieDetails';
+import { Genre } from 'src/app/shared/models/Genre';
+import { GenreService } from 'src/app/core/services/genre.service';
+import { MoviesService } from 'src/app/core/services/movies.service';
+import { Movie } from 'src/app/shared/models/Movie';
 
 @Component({
   selector: 'app-movie-details',
