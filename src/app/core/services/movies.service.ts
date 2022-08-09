@@ -12,14 +12,14 @@ export class MoviesService {
   constructor(private http:HttpClient) { }
 
   getTopGrossingMovies():Observable<Movie[]>{
-    return this.http.get<Movie[]>("https://movieshopapi.azurewebsites.net/api/Movies/top-grossing");
+    return this.http.get<Movie[]>("https://localhost:7007/api/Movies/top-revenue");
   }
 
   getMovieDetails(id:number):Observable<MovieDetails>{
-    return this.http.get<MovieDetails>("https://movieshopapi.azurewebsites.net/api/Movies/" + id);
+    return this.http.get<MovieDetails>("https://localhost:7007/api/Movies/" + id);
   }
 
   getMoviesByGenre(genreId:number):Observable<Movie[]>{
-    return this.http.get<Movie[]>("https://movieshopapi.azurewebsites.net/api/Movies/genre/" + genreId + "?pageSize=30&pageIndex=1");
+    return this.http.get<Movie[]>("https://localhost:7007/api/Movies/genre/" + genreId + "?pageSize=30&page=1");
   }
 }

@@ -10,8 +10,11 @@ import { MovieComponent } from './public/movie/movie.component';
 import { MovieDetailsComponent } from './public/movie/movie-details.component';
 import { CastDetailsComponent } from './public/cast/cast-details.component';
 import { GenreComponent } from './public/genre/genre.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AddGenreComponent } from './public/genre/add-genre.component';
+import { CastComponent } from './public/cast/cast.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
     MovieComponent,
     MovieDetailsComponent,
     CastDetailsComponent,
-    GenreComponent
+    GenreComponent,
+    AddGenreComponent,
+    CastComponent
   ],
   imports: [
     BrowserModule,

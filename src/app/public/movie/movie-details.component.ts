@@ -12,9 +12,11 @@ import { Movie } from 'src/app/shared/models/Movie';
 })
 export class MovieDetailsComponent implements OnInit {
 
-  constructor() { }
+  movie!:MovieDetails[];
+  constructor(private movieService:MoviesService) { }
 
   ngOnInit(): void {
+    
   }
 
 }

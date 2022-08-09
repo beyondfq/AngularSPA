@@ -8,10 +8,18 @@ import { Observable } from 'rxjs';
 })
 export class GenreService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private httpClient:HttpClient) { }
   
   getAllGenres():Observable<Genre[]>{
-    return this.http.get<Genre[]>("https://movieshopapi.azurewebsites.net/api/Genres");
-}
+    return this.httpClient.get<Genre[]>("https://localhost:7007/api/Genres");
+  }
+
+   addGenre(genre:Genre):Observable<Genre>{
+     return this.httpClient.post<Genre>("https://localhost:7007/api/Genres/add", genre)
+   }
+
+   //deleteGenre(genre:Genre):Observable<boolean>{
+  //   return this.httpClient.delete<boolean>("https://movieshopapi.azurewebsites.net/api/Genres/Delete", genreId)
+  // }
 
 }
