@@ -1,1 +1,31 @@
-<p>create-cast works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Angular Reactive Register Form</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form" [formGroup]="addCastForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" formControlName="name">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Profile Path</label>
+                            <input type="text" class="form-control" formControlName="lastProfilePath">
+                        </div>
+                        <div class="form-group">
+                            <label>Character</label>
+                            <input type="text" class="form-control" formControlName="character">
+                        </div>
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <input type="text" class="form-control" formControlName="gender">
+                        </div>                       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

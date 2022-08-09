@@ -5,6 +5,7 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { CreateMovieComponent } from './create-movie.component';
 import { CreateCastComponent } from './create-cast.component';
 import { TopPurchasesComponent } from './top-purchases.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
